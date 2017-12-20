@@ -35,6 +35,18 @@
 % Создание заглавной страницы
 \frame{\titlepage} 
 
+\begin{frame}{Stepic}
+	\includegraphics[width=100mm]{./stepic.pdf}
+\end{frame}
+
+\begin{frame}{Зачем?}
+	\begin{itemize}
+		\item Облегчить задачу составителям курсов
+		\item Отделение проверяющей системы от тестов
+		\item Сокращение времени ожидания вердикта пользователем
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Цели и задачи}
 	\textbf{Цель проекта:} оптимизация структуры и производительности проверяющей системы.
 
@@ -46,21 +58,14 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Зачем?}
-	\begin{itemize}
-		\item Облегчить задачу составителям курсов
-		\item Отделение проверяющей системы от тестов
-		\item Сокращение времени ожидания вердикта пользователем
-	\end{itemize}
-\end{frame}
-
 \begin{frame}{На старте}
+	Проблема, связанная с взаимосвязью проверяющей системы
 	\includegraphics[width=80mm]{./patchesrb.pdf}
 \end{frame}
 
 \begin{frame}{На старте}
 	Виртуализация \textbf{KVM + Libvirt}
-	\includegraphics[width=110mm]{./length_start.pdf}
+	\includegraphics[width=115mm]{./length_start.pdf}
 \end{frame}
 
 \begin{frame}{Оптимизация архитектуры}
@@ -95,16 +100,26 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Результаты}
+	\begin{itemize}
+		\item Проверяющая система отделена от тестовых сценариев
+		\item Создание автоматических тестов производительности системы
+		\item Ускорение проверки!
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Перспективы}
 	Проект не завершен в полной мере, ещё есть направления для развития:
 	\begin{itemize}
-		\item Дальнейший рефакторинг кода  
-		\item Создание новых задач и курсов по Linux
-		\item Возможны эксперименты с альтернативными системами виртуализации и провайдерами
+		\item Интеграция изменений
+		\item Автоматические тесты производительности могут быть совершеннее
+		\item Дальнейший рефакторинг кода
+		\item Потенциально возможно дальнейшее ускорение проверки
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Ссылки}
+	На курсы на степике, возможно ссылку на репозиторий с патчами
 	\begin{itemize}
 		\item \textbf{https://github.com/OSLL/mooc-lp-optimization}
 	\end{itemize}
